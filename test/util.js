@@ -8,7 +8,7 @@ var kinesalite = Kinesalite({createStreamMs: 0, shardLimit:100});
 module.exports.init = function(t) {
   dynalite.listen(4567, function(err) {
     t.error(err);
-    console.log('Dynalite started on port 5567');
+    console.log('Dynalite started on port 4567');
     kinesalite.listen(5568, function(err) {
       t.error(err);
       console.log('Kinesalite started on port 5568');
